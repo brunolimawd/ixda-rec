@@ -1,0 +1,22 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+/* ORGANIZATION */
+	Name: Fishy
+	Site: http://www.fishy.com.br
+	Twitter: @fishybr
+	Location: Recife, Brazil
+
+/* TEAM */
+	<your title>: <your name>
+	Site: 
+	Twitter: 
+	Location: 
+
+/* THANKS */
+	Names (& URL): 
+
+/* SITE */
+	Standards: HTML5, CSS3
+	Components: Modernizr, jQuery
+	Last update: YYYY/MM/DD

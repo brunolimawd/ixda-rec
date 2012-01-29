@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+html, body,input, button, textarea, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small,  strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, figure, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td{border:0;margin:0;padding:0;font-size:100%;vertical-align:baseline;outline:0}
+ul, ol{list-style:none}
+img,section, article, aside, header, footer, nav, dialog, figure {display:block}
+address{font-style:normal}
+a{text-decoration:none}
+textarea{resize:none;font:12px arial}
+h1,h2,h3,h4,h5,h6{font-weight:normal}
+em{font-style:normal}
+/* end / CSS reset */
+
+@font-face{
+	font-family:"Liberation Sans";
+	src:url("../fonts/LiberationSans-Regular.eot?") format("eot"),
+		url("../fonts/LiberationSans-Regular.woff") format("woff"),
+		url("../fonts/LiberationSans-Regular.ttf") format("truetype"),
+		url("../fonts/LiberationSans-Regular.svg#LiberationSans") format("svg");
+	font-weight:normal;
+	font-style:normal
+}
+/* end / font-face */
+
+#header,#content,#footer{clear:both}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+::-moz-selection{background:#000;color:#fff;text-shadow:none}
+::selection{background:#000;color:#fff;text-shadow:none}
+input,select,textarea{font:11px arial,helvetica,sans-serif,clean;overflow:auto;resize:vertical}
+label{cursor:pointer}
+body{font:12px arial,helvetica,sans-serif,clean}
+input:focus,textarea:focus{outline: none}
+/* end / CSS Default */
+
+.clear {clear:both;zoom:1}
+.right {float:right}
+.left {float:left}
+/* end / position */
+
+.hide{display:none}
+.screen-reader{position:absolute;top:-999em;visibility:hidden}
+/* end / hide elements */
+
+#header{}
+#header h1{font-family:"Liberation Sans",Arial,Helvetica,sans-serif;font-size:50px}
+#header #nav{}
+/* end / header */
+
+#content{}
+#main{}
+#sidebar{}
+/* end / content */
+
+#footer{}
+#footer .copy{}
+#footer .developer{}
+/* end / footer */
+
+@media print {
+	body{line-height:1.5;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;color:#000;background:none;font-size:10pt}
+	.container{background:none}
+	hr{background:#ccc;width:100%;height:2px;margin:2em 0;padding:0;border:none}
+	h1, h2, h3, h4, h5, h6 {font-family:"Helvetica Neue", Arial, "Lucida Grande", sans-serif}
+	code{font:.9em "Courier New", Monaco, Courier, monospace}
+	a img{border:none}
+	p img.top {margin-top:0}
+	img{max-width:100%}
+	blockquote{margin:1.5em;padding:1em;font-style:italic;font-size:.9em}
+	.small{font-size:.9em}
+	.large{font-size:1.1em}
+	.quiet{color:#999}
+	.hide{display:none}
+	a:link, a:visited{background:transparent;font-weight:700;text-decoration:underline}
+	a:link:after, a:visited:after{content:" (" attr(href) ")";font-size:90%}
+}
+/* end / css print */
