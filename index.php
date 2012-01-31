@@ -6,18 +6,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title> </title>
+	<title><?php wp_title( ' - ', true, 'right' );bloginfo( 'name' ); ?></title>
 	<meta name="author" content="humans.txt"> 
-	<meta name="Description" content=" ">
+	<meta name="Description" content="<?php bloginfo('description'); ?>">
 	<meta name="Keywords" content=" ">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- </meta tags default> -->
-	<meta property="og:title" content=" ">
-	<meta property="og:type" content=" ">
-	<meta property="og:url" content=" ">
-	<meta property="og:image" content=" ">
-	<meta property="og:site_name" content=" ">
-	<meta property="og:description" content=" ">
+	<meta property="og:image" content="<?php bloginfo('template_directory'); ?>/img/layout/ixda-recife-avatar.png">
+	<meta property="og:site_name" content="<?php bloginfo('name'); ?>">
+	<meta property="og:description" content="<?php bloginfo('description'); ?>">
 	<!-- </meta tags Open Graph protocol> -->
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/layout/favicon.ico">
 	<link rel="icon" href="<?php bloginfo('template_directory'); ?>/img/layout/favicon.ico">
@@ -51,19 +48,32 @@
 	<div id="wrap">
 		<div id="container">
 			<header id="header">
-				<h1><a href="#" title="">Logo</a></h1>
-				<nav id="nav">
+				<h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
+				<nav class="social-media">
 					<ul>
-						<li></li>
+						<li class="facebook"><a href="http://www.facebook.com/groups/155127471236121/" title="O IxDA no Facebook" rel="external">Facebook</a></li>
+						<li class="twitter"><a href="http://twitter.com/ixdarecife" title="O IxDA no Twitter" rel="external">Twitter</a></li>
+						<li class="flickr"><a href="http://www.flickr.com" title="O IxDA no Flickr" rel="external">Flickr</a></li>
+						<li class="rss"><a href="<?php bloginfo('rss_url'); ?>" title="Assine o RSS do IxDA Recife" rel="external">RSS</a></li>
 					</ul>
 				</nav>
-				<div id="search"></div>
 			</header><!-- </header> -->
 			<section id="content">
-				<section id="main">
-					
+				<section id="about">
+					<h2>.sobre</h2>
 				</section>
-				<aside id="sidebar"></aside>
+				<section id="events">
+					<h2>.eventos</h2>
+				</section>
+				<section id="blog">
+					<h2>.blog</h2>
+				</section>
+				<section id="candidature">
+					<h2>.candidatura</h2>
+				</section>
+				<section id="contact">
+					<h2>.contato</h2>
+				</section>
 			</section><!-- </content> -->
 			<footer id="footer">
 				<section class="developer">
@@ -72,6 +82,7 @@
 			</footer><!-- </footer> -->
 		</div><!-- </container> -->
 	</div><!-- </wrap> -->
+	<script src="<?php bloginfo('template_directory'); ?>/js/libs/easing.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/js/functions.js"></script>
 	<!-- </script> -->
 	<!-- <google analytics>-->
